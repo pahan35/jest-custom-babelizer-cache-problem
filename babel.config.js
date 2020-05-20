@@ -21,9 +21,6 @@ module.exports = api => ({
     },
   },
   plugins: [
-    // flow-strip-types MUST be before class-properties, see
-    // https://github.com/babel/babel/issues/7233
-    '@babel/plugin-transform-flow-strip-types',
     '@babel/plugin-proposal-class-properties',
     // disable loose mode so we can properly transform spread operator
     // here:
